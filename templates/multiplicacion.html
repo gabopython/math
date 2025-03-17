@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST">
+    <div class="results">
+        {% if result is not none %}
+        {{ result }}
+        {% else %}
+        Resultados acá
+        {% endif %}
+    </div>
+    <div class="data">
+        <input type="text" name="dato1" placeholder="Dato 1">
+        <input type="text" name="dato2" placeholder="Dato 2">
+    </div>
+    <div class="buttons">
+        <button type="submit">multiplicar</button>
+    </div>
+</form>
+{% endblock %}
