@@ -3,14 +3,10 @@
 {% block content %}
 <div>
     <div>
-        <form class="buttons" action="/suma" method="get">
-            <button type="submit">suma</button>
-        </form>
-        <form class="buttons" action="/resta" method="get">
-            <button type="submit">resta</button>
-        </form>
-        <form class="buttons" action="/multiplicacion" method="get">
-            <button type="submit">multiplicacion</button>
+        <form class="buttons" action="/operacion" method="post">
+            <button type="submit" name="action" value="sumar">suma</button>
+            <button type="submit" name="action" value="restar">resta</button>
+            <button type="submit" name="action" value="multiplicar">multiplicacion</button>
         </form>
     </div>
 </div>
